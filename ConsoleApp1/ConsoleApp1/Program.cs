@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -86,16 +86,18 @@ namespace ConsoleApp2
         {
             if (node == null)
                 return;
-
+            
             /* first recur on left child */
             printInorder(node.left);
-
             /* then print the data of node */
             Console.Write(node.data + " ");
-
             /* now recur on right child */
             printInorder(node.right);
         }
+
+        
+
+
 
         /* Given a binary tree, print 
            its nodes in preorder*/
@@ -190,7 +192,7 @@ namespace ConsoleApp2
 
             for (int i = 0; i < 10000; i++)
             {
-                tree.insert(item[i] = rnd.Next(-0,9));
+                tree.insert(item[i] = rnd.Next(0,7));
             }
 
 
