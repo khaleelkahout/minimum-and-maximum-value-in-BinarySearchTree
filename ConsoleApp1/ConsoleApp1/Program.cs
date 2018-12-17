@@ -192,7 +192,7 @@ namespace ConsoleApp2
 
             for (int i = 0; i < 10000; i++)
             {
-                tree.insert(item[i] = rnd.Next(0,7));
+                tree.insert(item[i] = rnd.Next(0,9));
             }
 
 
